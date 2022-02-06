@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="boxes">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box" *ngIf="isVisible">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+  <div class="boxes">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box" [hidden]="!isVisible">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+  <div class="boxes">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box" [ngStyle]="{visibility: 'hidden'}">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</div>

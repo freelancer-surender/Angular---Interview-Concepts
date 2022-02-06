@@ -1,0 +1,29 @@
+<div class="container">
+  <h3>{{ channelName }}</h3>
+  <h3 [innerText]="channelName"></h3>
+  <div>
+    <img src="{{ imgPath }}" alt="" width="200px">
+  </div>
+  <div>
+    <img [src]="imgPath" alt="" width="200px">
+  </div>
+  <div>
+    <button class="btn btn-dark" disabled="{{ isDisabled }}">Submit</button>
+  </div>
+  <div>
+    <button class="btn btn-dark" [disabled]="isDisabled">Submit</button>
+  </div>
+  <div class="form">
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <input type="text" class="form-control" name="comment" #comment>
+    </div>
+    <div>
+      <button class="btn btn-danger" (click)="submit(comment.value)">Submit</button>
+    </div>
+    <div *ngFor="let comment of comments">
+      <div [innerHtml]="comment"></div>
+      <div>{{ comment }}</div>
+    </div>
+  </div>
+</div>

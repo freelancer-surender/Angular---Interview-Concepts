@@ -1,0 +1,17 @@
+.container {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="btn-container">
+    <div class="section left">
+      <button class="btn btn-dark" (click)="getObservableData()">
+        Get Observable Data
+      </button>
+    </div>
+    <div class="section">
+      <button class="btn btn-dark" (click)="getSubjectData()">
+        Get Subject Data
+      </button>
+    </div>
+  </div>
+  <div class="text-container">
+    <div class="section left">
+      <div>{{ observableData1 }}  |  {{ observableData2 }}</div>
+    </div>
+    <div class="section">
+      <div>{{ subjectData1 }}  |  {{ subjectData2 }}</div>
+    </div>
+  </div>
+</div>

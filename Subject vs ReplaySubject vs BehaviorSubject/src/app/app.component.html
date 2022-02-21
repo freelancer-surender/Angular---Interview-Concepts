@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="btn-container">
+    <div class="section">
+      <button class="btn btn-dark" (click)="emitData()">Emit Data</button>
+      <button class="btn btn-dark" (click)="getData()">Subscribe</button>
+    </div>
+  </div>
+  <div class="text-container">
+    <div class="section">
+      <div *ngFor="let data of myData">{{ data }}</div>
+    </div>
+  </div>
+</div>

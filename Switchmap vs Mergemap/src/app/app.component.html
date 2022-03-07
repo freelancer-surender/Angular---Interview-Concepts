@@ -1,0 +1,9 @@
+<div>
+  <div class="spinner-container">
+    <div class="lds-heart" *ngIf="loading"><div></div></div>
+  </div>
+  <input [formControl]="searchControl" placeholder="Search..." />
+  <div class="results">
+    <div *ngFor="let fruit of fruits">{{ fruit }}</div>
+  </div>
+</div>

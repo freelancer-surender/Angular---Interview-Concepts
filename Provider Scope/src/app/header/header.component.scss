@@ -1,0 +1,17 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #F4ABC4;
+  color: #333456;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .nav-item {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      color: #060930;
+    }
+  }
+}

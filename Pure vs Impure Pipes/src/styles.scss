@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-container {
+  width: 100vw;
+  height: 50vh;
+  padding: 30px;
+}
+
+.btn {
+  margin-top: 30px;
+  border: none;
+}
+
+.form-control {
+  width: 300px;
+}

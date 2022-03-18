@@ -1,0 +1,12 @@
+<div class="my-container">
+  <div class="form-group">
+    <label for="student">Student Name</label>
+    <input type="text" name="student" [(ngModel)]="name" class="form-control" />
+  </div>
+  <div class="text-container">
+    <span *ngIf="name.length > 0">{{ mark | result: name }}</span>
+  </div>
+  <div class="btn-container">
+    <button class="btn btn-dark" (click)="update()">Update</button>
+  </div>
+</div>

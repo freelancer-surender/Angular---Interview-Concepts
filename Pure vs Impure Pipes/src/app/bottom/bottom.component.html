@@ -1,0 +1,32 @@
+<div class="my-container">
+  <div class="form-group">
+    <label for="filter">Search</label>
+    <input
+      type="text"
+      name="filter"
+      [(ngModel)]="search"
+      class="form-control"
+    />
+  </div>
+  <div class="wrapper">
+    <div class="left">
+      <h5>All Fruits</h5>
+      <div class="fruits">
+        <div class="fruit" *ngFor="let fruit of fruits">
+          {{ fruit }}
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h5>Filtered Fruits</h5>
+      <div class="fruits">
+        <div class="fruit" *ngFor="let fruit of fruits | filter: search">
+          {{ fruit }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button class="btn btn-light" (click)="update()">Update</button>
+  </div>
+</div>

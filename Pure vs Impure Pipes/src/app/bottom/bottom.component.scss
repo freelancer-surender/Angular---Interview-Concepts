@@ -1,0 +1,21 @@
+.my-container {
+  background-color: #323232;
+  color: rgb(255, 178, 35);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: rgb(255, 178, 35);
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 30px;
+  .left, .right {
+    width: 50%;
+    h5 {
+      text-decoration: underline;
+    }
+  }
+}

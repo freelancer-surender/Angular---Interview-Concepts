@@ -1,0 +1,13 @@
+<div class="app-container">
+  <div class="input-container">
+    <div class="title">App Component</div>
+    <div class="form-group">
+      <input type="text" class="form-control" (input)="onTextChange($event)" />
+    </div>
+  </div>
+  <div class="text-container">
+    <div class="title">App Component</div>
+    <div class="result" *ngFor="let log of logs">{{ log }}</div>
+  </div>
+  <app-child [inputValue]="textBoxValue"></app-child>
+</div>

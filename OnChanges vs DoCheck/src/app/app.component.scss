@@ -1,0 +1,50 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  .input-container {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecb365;
+    color: #064663;
+    position: relative;
+    .title {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    input {
+      width: 400px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #064663;
+      border: 2px solid #064663;
+    }
+  }
+  .text-container {
+    width: 100vw;
+    height: 35vh;
+    background-color: #064663;
+    color: #ecb365;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    .title {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .result {
+      margin-bottom: 10px;
+    }
+  }
+}

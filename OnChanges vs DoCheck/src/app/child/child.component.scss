@@ -1,0 +1,21 @@
+.text-container {
+  width: 100vw;
+  height: 35vh;
+  color: #064663;
+  background-color: #ecb365;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .result {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="title">Home</div>
+  <div>
+    <a href="user/1">Redirect</a>
+  </div>
+  <div>
+    <a routerLink="/user/1">Navigate</a>
+  </div>
+  <div>
+    <button (click)="navigate()">Navigate</button>
+  </div>
+  <div>
+    <button (click)="navigateByUrl()">Navigate By URL</button>
+  </div>
+  <div>
+    <button (click)="increase()">Increase</button>
+  </div>
+  <div class="count">{{ counter }}</div>
+</div>

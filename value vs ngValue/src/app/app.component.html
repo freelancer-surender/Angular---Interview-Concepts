@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="top">
+    <div>Do you accept the terms and conditions</div>
+    <select name="terms" [(ngModel)]="selectedValue" placeholder="Select">
+      <option [ngValue]="true">Accept</option>
+      <option [ngValue]="false">Decline</option>
+    </select>
+    <div *ngIf="selectedValue">You have accepted the terms and conditions</div>
+    <div *ngIf="!selectedValue">
+      You have not accepted the terms and conditions
+    </div>
+  </div>
+  <div class="bottom">
+    <div>Choose a student</div>
+    <select name="student" [(ngModel)]="selectedStudent" (change)="onSelect()">
+      <option [ngValue]="student" *ngFor="let student of students">
+        {{ student.name }}
+      </option>
+    </select>
+    <div>You have selected {{ selectedStudent?.name }}</div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  .top {
+    width: 100%;
+    height: 50vh;
+    color: #ffc425;
+    background-color: #2e003e;
+    padding: 30px;
+  }
+  .bottom {
+    width: 100%;
+    height: 50vh;
+    color: #2e003e;
+    background-color: #ffc425;
+    padding: 30px;
+  }
+  select {
+    margin: 20px 0px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    option {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2e003e;
+    }
+  }
+}

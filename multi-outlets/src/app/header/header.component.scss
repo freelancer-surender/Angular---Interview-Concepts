@@ -1,0 +1,28 @@
+.header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #342E37;
+    .nav {
+        width: 50%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FAFFFD;
+            &.home-active {
+                color: #9FD356;
+            }
+            &.user-active {
+                color: #FA824C;
+            }
+        }
+    }
+}

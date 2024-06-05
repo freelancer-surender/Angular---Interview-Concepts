@@ -1,0 +1,19 @@
+.nav {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222222;
+    color: #fff;
+    .nav-item {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
